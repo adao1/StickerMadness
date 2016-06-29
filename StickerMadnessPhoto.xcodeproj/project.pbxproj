@@ -13,6 +13,7 @@
 		49D06D671D22F0DF00894634 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D06D651D22F0DF00894634 /* LaunchScreen.storyboard */; };
 		49D06D771D2324D100894634 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D06D761D2324D100894634 /* ViewController.swift */; };
 		49D06D7E1D232C2100894634 /* PhotoTakingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D06D7D1D232C2100894634 /* PhotoTakingHelper.swift */; };
+		49D06D801D24324D00894634 /* Sticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D06D7F1D24324D00894634 /* Sticker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		49D06D681D22F0DF00894634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49D06D761D2324D100894634 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		49D06D7D1D232C2100894634 /* PhotoTakingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTakingHelper.swift; sourceTree = "<group>"; };
+		49D06D7F1D24324D00894634 /* Sticker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sticker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				49D06D761D2324D100894634 /* ViewController.swift */,
 				49D06D7D1D232C2100894634 /* PhotoTakingHelper.swift */,
 				49D06D601D22F0DF00894634 /* Main.storyboard */,
+				49D06D7F1D24324D00894634 /* Sticker.swift */,
 				49D06D631D22F0DF00894634 /* Assets.xcassets */,
 				49D06D651D22F0DF00894634 /* LaunchScreen.storyboard */,
 				49D06D681D22F0DF00894634 /* Info.plist */,
@@ -99,6 +102,7 @@
 				TargetAttributes = {
 					49D06D581D22F0DF00894634 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = PR5XBQ2M78;
 					};
 				};
 			};
@@ -139,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49D06D771D2324D100894634 /* ViewController.swift in Sources */,
+				49D06D801D24324D00894634 /* Sticker.swift in Sources */,
 				49D06D7E1D232C2100894634 /* PhotoTakingHelper.swift in Sources */,
 				49D06D5D1D22F0DF00894634 /* AppDelegate.swift in Sources */,
 			);
@@ -253,10 +258,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = StickerMadnessPhoto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.StickerMadnessPhoto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -264,10 +272,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = StickerMadnessPhoto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.StickerMadnessPhoto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

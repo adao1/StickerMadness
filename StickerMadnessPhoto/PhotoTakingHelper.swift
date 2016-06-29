@@ -66,7 +66,7 @@ extension PhotoTakingHelper: UIImagePickerControllerDelegate, UINavigationContro
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
         viewController.dismissViewControllerAnimated(false, completion: nil)
-        
+//        ((viewController as! UITabBarController).viewControllers![0] as! ViewController).hatButton.hidden = false
         callback(image)
     }
     
