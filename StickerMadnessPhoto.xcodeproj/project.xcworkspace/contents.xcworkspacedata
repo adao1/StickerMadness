@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:StickerMadnessPhoto.xcodeproj">
+      location = "self:/Users/AlexDao/Documents/MakeSchool/StickerMadnessPhoto/StickerMadnessPhoto.xcodeproj">
    </FileRef>
 </Workspace>

@@ -1,25 +1,126 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UMo-3f-anx">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="Ibv-xZ-ft0">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nZB-m2-f7g" customClass="ViewController" customModule="StickerMadnessPhoto" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="Qek-vO-WXB"/>
+                        <viewControllerLayoutGuide type="bottom" id="cth-jK-cms"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="jAU-yA-spR">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IpP-zv-MgT">
+                                <rect key="frame" x="0.0" y="20" width="600" height="531"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AXl-4v-IRK">
+                                <rect key="frame" x="512" y="446" width="68" height="90"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0a-rP-c7O">
+                                        <rect key="frame" x="0.0" y="0.0" width="68" height="30"/>
+                                        <state key="normal" title="Hat"/>
+                                        <connections>
+                                            <action selector="hatAction:" destination="nZB-m2-f7g" eventType="touchUpInside" id="HJM-fS-PPY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUv-mW-FdF">
+                                        <rect key="frame" x="0.0" y="30" width="68" height="30"/>
+                                        <state key="normal" title="Mustache"/>
+                                        <connections>
+                                            <action selector="mustacheAction:" destination="nZB-m2-f7g" eventType="touchUpInside" id="Dyj-D4-tpH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwg-8f-Kxg">
+                                        <rect key="frame" x="0.0" y="60" width="68" height="30"/>
+                                        <state key="normal" title="Glasses"/>
+                                        <connections>
+                                            <action selector="glassesAction:" destination="nZB-m2-f7g" eventType="touchUpInside" id="1pd-Zz-QOb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="jEG-2F-gBa"/>
+                                    <constraint firstAttribute="width" constant="68" id="xFJ-gf-CL5"/>
+                                </constraints>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lnc-C6-DLp">
+                                <rect key="frame" x="180" y="177" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="BwE-Dn-Rih"/>
+                                    <constraint firstAttribute="height" constant="128" id="xHX-fl-Knx"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Awa-oj-LUi">
+                                <rect key="frame" x="180" y="41" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="ZtI-E0-Uyk"/>
+                                    <constraint firstAttribute="height" constant="128" id="q1P-S7-ANh"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tgd-gn-MaK">
+                                <rect key="frame" x="180" y="321" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="EqQ-v7-bPt"/>
+                                    <constraint firstAttribute="width" constant="240" id="MXe-Uf-2pT"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Awa-oj-LUi" firstAttribute="centerX" secondItem="jAU-yA-spR" secondAttribute="centerX" id="1HP-Pw-XzG"/>
+                            <constraint firstItem="Lnc-C6-DLp" firstAttribute="centerY" secondItem="jAU-yA-spR" secondAttribute="centerY" id="1ky-aj-0vd"/>
+                            <constraint firstItem="Lnc-C6-DLp" firstAttribute="centerX" secondItem="jAU-yA-spR" secondAttribute="centerX" id="3qf-ec-Qzp"/>
+                            <constraint firstItem="IpP-zv-MgT" firstAttribute="top" secondItem="Qek-vO-WXB" secondAttribute="bottom" id="Kg0-it-IY4"/>
+                            <constraint firstAttribute="trailing" secondItem="IpP-zv-MgT" secondAttribute="trailing" id="M1a-oC-43v"/>
+                            <constraint firstItem="Tgd-gn-MaK" firstAttribute="centerX" secondItem="jAU-yA-spR" secondAttribute="centerX" id="M6b-Sv-92G"/>
+                            <constraint firstItem="IpP-zv-MgT" firstAttribute="leading" secondItem="jAU-yA-spR" secondAttribute="leading" id="Q56-mN-vae"/>
+                            <constraint firstItem="Lnc-C6-DLp" firstAttribute="top" secondItem="Awa-oj-LUi" secondAttribute="bottom" constant="8" id="Uhq-9x-ZJr"/>
+                            <constraint firstItem="cth-jK-cms" firstAttribute="top" secondItem="IpP-zv-MgT" secondAttribute="bottom" id="fgU-Oh-blt"/>
+                            <constraint firstItem="cth-jK-cms" firstAttribute="top" secondItem="AXl-4v-IRK" secondAttribute="bottom" constant="15" id="sT6-c1-3pd"/>
+                            <constraint firstAttribute="trailing" secondItem="AXl-4v-IRK" secondAttribute="trailing" constant="5" id="uEP-JK-x32"/>
+                            <constraint firstItem="Tgd-gn-MaK" firstAttribute="top" secondItem="Lnc-C6-DLp" secondAttribute="bottom" constant="16" id="yj1-UE-X4y"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="camera" id="Cct-yj-BVv">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="displayedImage" destination="IpP-zv-MgT" id="9eE-Ch-zqz"/>
+                        <outlet property="glassesSticker" destination="Tgd-gn-MaK" id="XkE-b1-RXr"/>
+                        <outlet property="hatSticker" destination="Awa-oj-LUi" id="lLD-Di-QWL"/>
+                        <outlet property="mustacheSticker" destination="Lnc-C6-DLp" id="CWJ-bj-YCf"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CNe-5u-rrf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="351" y="-254"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="up2-RN-ALn">
+            <objects>
+                <tabBarController id="UMo-3f-anx" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="g6m-ic-Bam">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="nZB-m2-f7g" kind="relationship" relationship="viewControllers" id="3I7-VV-bUB"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qms-Fz-V61" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-469" y="77"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="camera" width="40" height="30"/>
+    </resources>
 </document>
